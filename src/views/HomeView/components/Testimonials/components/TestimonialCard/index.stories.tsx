@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { StepCard } from '.';
+import { TestimonialCard } from '.';
 
 
-const meta: Meta<typeof StepCard> = {
-  title: 'components/HowItWorks/components/StepCard',
-  component: StepCard,
+const meta: Meta<typeof TestimonialCard> = {
+  title: 'views/HomeView/components/Testimonials/components/TestimonialCard',
+  component: TestimonialCard,
   tags: ['autodocs'],
 }
 export default meta

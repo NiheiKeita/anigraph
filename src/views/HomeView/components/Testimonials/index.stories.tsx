@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { HowItWorks } from '.';
+import { Testimonials } from '.';
 
 
-const meta: Meta<typeof HowItWorks> = {
-  title: 'components/HowItWorks',
-  component: HowItWorks,
+const meta: Meta<typeof Testimonials> = {
+  title: 'views/HomeView/components/Testimonials',
+  component: Testimonials,
   tags: ['autodocs'],
 }
 export default meta

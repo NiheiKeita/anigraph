@@ -3,7 +3,7 @@ import { FeatureCard } from '.';
 
 
 const meta: Meta<typeof FeatureCard> = {
-  title: 'components/FeatureSection/components/FeatureCard',
+  title: 'views/HomeView/components/FeatureSection/components/FeatureCard',
   component: FeatureCard,
   tags: ['autodocs'],
 }

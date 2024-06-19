@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { TestimonialCard } from '.';
+import { HeroSection } from '.';
 
 
-const meta: Meta<typeof TestimonialCard> = {
-  title: 'components/Testimonials/components/TestimonialCard',
-  component: TestimonialCard,
+const meta: Meta<typeof HeroSection> = {
+  title: 'views/HomeView/components/HeroSection',
+  component: HeroSection,
   tags: ['autodocs'],
 }
 export default meta
@@ -18,9 +18,11 @@ export const Default: Story = {
 }
 export const Blue: Story = {
   args: {
+    variant: "blue",
   },
 }
 export const Gray: Story = {
   args: {
+    variant: "black",
   },
 }

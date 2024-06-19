@@ -1,10 +1,10 @@
 "use client"
 
-import { Community } from "@/components/Community";
-import { FeatureSection } from "@/components/FeatureSection";
-import { HeroSection } from "@/components/HeroSection";
-import { HowItWorks } from "@/components/HowItWorks";
-import { Testimonials } from "@/components/Testimonials";
+import { Community } from "@/views/HomeView/components/Community";
+import { FeatureSection } from "@/views/HomeView/components/FeatureSection";
+import { HeroSection } from "@/views/HomeView/components/HeroSection";
+import { HowItWorks } from "@/views/HomeView/components/HowItWorks";
+import { Testimonials } from "@/views/HomeView/components/Testimonials";
 import React from "react"
 
 export const HomeView = React.memo(function HomeView() {
