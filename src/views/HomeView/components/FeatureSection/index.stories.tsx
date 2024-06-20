@@ -16,13 +16,3 @@ export const Default: Story = {
     // variant: "default",
   },
 }
-export const Blue: Story = {
-  args: {
-    variant: "blue",
-  },
-}
-export const Gray: Story = {
-  args: {
-    variant: "black",
-  },
-}
