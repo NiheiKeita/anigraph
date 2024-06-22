@@ -24,12 +24,13 @@ export const AnimeCard = React.memo<Props>(function AnimeCard({
           className="w-full h-full rounded-lg"
         /> */}
         <Image
-          src={anime?.facebook_image_url ?? ''}
+          src={anime?.facebook_image_url == '' ? "/unnamed.png" : anime?.facebook_image_url ?? ''}
           alt={anime?.title ?? ''}
           layout="fill"
           objectFit="cover"
           className="w-full rounded-lg"
         />
+
       </div>
       <h3 className="mt-4 text-xl font-bold">{anime?.title}</h3>
       <p className="text-sm text-gray-500">{anime?.title_kana}</p>
