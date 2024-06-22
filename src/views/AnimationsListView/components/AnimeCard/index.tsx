@@ -13,7 +13,7 @@ export const AnimeCard = React.memo<Props>(function AnimeCard({
 
   return (
     <div className="rounded-lg bg-white p-6 shadow-lg">
-      <div className="relative h-56 w-full sm:h-44 md:h-44 lg:h-44">
+      <div className="relative h-56 w-full sm:h-44 md:h-44 lg:h-52">
         {/* <Image
           src={anime?.facebook_image_url ?? ''}
           alt={anime?.title ?? ''}
