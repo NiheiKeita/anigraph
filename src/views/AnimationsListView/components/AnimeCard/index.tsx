@@ -12,17 +12,8 @@ export const AnimeCard = React.memo<Props>(function AnimeCard({
 }) {
 
   return (
-    <div className="rounded-lg bg-white p-6 shadow-lg">
+    <div className="rounded-lg bg-white p-6 shadow-lg transition-transform duration-200 hover:scale-105">
       <div className="relative h-56 w-full sm:h-44 md:h-44 lg:h-52">
-        {/* <Image
-          src={anime?.facebook_image_url ?? ''}
-          alt={anime?.title ?? ''}
-          layout="responsive"
-          objectFit="cover"
-          width={500}
-          height={500}
-          className="w-full h-full rounded-lg"
-        /> */}
         <Image
           src={anime?.facebook_image_url == '' ? "/unnamed.png" : anime?.facebook_image_url ?? ''}
           alt={anime?.title ?? ''}
@@ -34,7 +25,6 @@ export const AnimeCard = React.memo<Props>(function AnimeCard({
       </div>
       <h3 className="mt-4 text-xl font-bold">{anime?.title}</h3>
       <p className="text-sm text-gray-500">{anime?.title_kana}</p>
-      <p className="text-sm italic text-gray-500">{anime?.title_en}</p>
       <p className="mt-2">メディア: {anime?.media}</p>
       <p className="mt-2">シーズン: {anime?.season_name}</p>
       <div className="mt-4 flex justify-between">
