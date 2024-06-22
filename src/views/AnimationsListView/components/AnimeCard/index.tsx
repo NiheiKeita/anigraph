@@ -3,6 +3,7 @@
 import React from "react"
 import { Anime } from "../../types"
 import Image from "next/image"
+import Link from "next/link"
 
 type Props = {
   anime?: Anime
@@ -21,15 +22,14 @@ export const AnimeCard = React.memo<Props>(function AnimeCard({
           objectFit="cover"
           className="w-full rounded-lg"
         />
-
       </div>
       <h3 className="mt-4 text-xl font-bold">{anime?.title}</h3>
       <p className="text-sm text-gray-500">{anime?.title_kana}</p>
       <p className="mt-2">メディア: {anime?.media}</p>
       <p className="mt-2">シーズン: {anime?.season_name}</p>
       <div className="mt-4 flex justify-between">
-        <a href={anime?.official_site_url} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">公式サイト</a>
-        <a href={anime?.wikipedia_url} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">Wikipedia</a>
+        {anime?.official_site_url && <Link href={anime.official_site_url} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">公式サイト</Link>}
+        {anime?.wikipedia_url && <Link href={anime.wikipedia_url} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">Wikipedia</Link>}
       </div>
     </div>
   );
