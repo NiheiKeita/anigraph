@@ -32,5 +32,5 @@ export const AnimeCard = React.memo<Props>(function AnimeCard({
         {anime?.wikipedia_url && <Link href={anime.wikipedia_url} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">Wikipedia</Link>}
       </div>
     </div>
-  );
+  )
 })
