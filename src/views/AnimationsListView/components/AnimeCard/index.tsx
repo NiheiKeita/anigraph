@@ -28,8 +28,26 @@ export const AnimeCard = React.memo<Props>(function AnimeCard({
       <p className="mt-2">メディア: {anime?.media}</p>
       <p className="mt-2">シーズン: {anime?.season_name}</p>
       <div className="mt-4 flex justify-between">
-        {anime?.official_site_url && <Link href={anime.official_site_url} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">公式サイト</Link>}
-        {anime?.wikipedia_url && <Link href={anime.wikipedia_url} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">Wikipedia</Link>}
+        {anime?.official_site_url &&
+          <Link
+            href={anime.official_site_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500 hover:underline"
+          >
+            公式サイト
+          </Link>
+        }
+        {anime?.wikipedia_url &&
+          <Link
+            href={anime.wikipedia_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500 hover:underline"
+          >
+            Wikipedia
+          </Link>
+        }
       </div>
     </div>
   )
